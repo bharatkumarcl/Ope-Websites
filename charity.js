@@ -29,5 +29,5 @@ function signIn(){
 function signout(){
    
     alert("signed out");
-    window.location.replace("auth_login.html");
+    window.location.replace("index.html");
 }
