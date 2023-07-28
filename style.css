@@ -1,6 +1,6 @@
 body
 {
-    background-color: black;
+    background-color: rgb(7, 7, 7);
 }
 /*------------------------------------------------NAVBAR----------------------------------------*/
 .nav
@@ -9,8 +9,14 @@ body
     z-index: 9;
     padding-left: 50px;
     padding-right:50px;
+    
+    
+    background-image: url(images/logo.png);
+   
+    
     display:flex;
     box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.856);
+    
 }
 .nav_top
 {
@@ -18,23 +24,23 @@ body
     top:0;
     right:0;
     left:0;
+    padding-bottom:30px;
+    
 }
-.logo
+logo
 {
     float:left;
-    width: 50%;
+    width: 60%;
+    height: 60px;
+    margin-bottom: 60px;
 }
-.logo img
-{
-    padding: 8px;
-    width:30%;
-    margin-left:10%;
-}
+
 .nav_side
 {
     float:right;
-    width:45%;
+    width:70%;
     margin-top: 20px;
+    margin-left: 120px;
 }
 .nav_side a
 {
@@ -63,7 +69,7 @@ body
 /*------------------------------------------------MAIN----------------------------------------*/
 .main
 {
-    background-image: url("images/Gurukula_back.jpg");
+    background-image: url("images/back.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,7 +102,12 @@ body
 {
     margin-top:10%;
     text-align: left;
-    width:0%;
+    width:10%;
+}
+.btn{
+    box-shadow: 20px;
+    border-radius: 25px;
+
 }
 .main .main_content .btn a
 {
@@ -105,8 +116,8 @@ body
     margin:44%;
     padding: 10px 20px;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.856);
-    color:white;
+    background-color: rgba(209, 96, 21, 0.856);
+    color:rgb(7, 7, 7);
     font-family: 'Trebuchet MS', sans-serif; 
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.856);
@@ -114,7 +125,7 @@ body
 }
 .main .main_content .btn a:hover
 {
-    background-color: rgba(255, 255, 255, 0.527);
+    background-color: rgba(20, 202, 51, 0.527);
     color: rgb(37, 0, 19);
     border: none;
     border: 4px solid rgb(37, 0, 19);
@@ -128,16 +139,19 @@ body
     text-align: center;
     color: white;
     font-family: 'Trebuchet MS', sans-serif;
+    
 }
 .side .left
 {
     width:50%;
     float: left;
+
 }
 .side .left img
 {
     float: left;
     width:100%;
+ 
 }
 .side .right
 {
@@ -534,3 +548,65 @@ footer p
     line-height: 25px;
 }
 /*--------------------------------------------CATERING---------------------------------------*/
+
+.maincon{
+display: flex;
+
+width: 700px;
+margin-top: 100px;
+}
+
+.v2{
+    padding-left: 100px;
+}
+
+
+.b1{
+    
+    width: 30px;
+    height: 40px;
+
+    margin-left: 25px;
+}
+.maincon2{
+    display: flex;
+}
+.ab3{
+    color: white;
+    padding-top: 50px;
+    margin-left: 100px;
+    text-align: center;
+}
+#animate-charcter
+{
+   text-transform: lowercase;
+  background-image: linear-gradient(
+    -225deg,
+    #749944 0%,
+    #0c0c0c 29%,
+    #e9e0e3 67%,
+    #0a0a0a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+margin-left: 50px;
+text-align: center;
+
+
+    
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
